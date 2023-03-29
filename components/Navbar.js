@@ -9,11 +9,11 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <header className="grid items-center grid-cols-3 py-3 px-2 md:px-5 shadow-md z-50 sticky top-0">
+    <header className="grid items-center grid-cols-3 py-3 px-2 md:px-5 shadow-md z-50 sticky top-0 bg-white bg-opacity-80">
       <div>
         <Image src="https://links.papareact.com/qd3" width="120" height="40" />
       </div>
-      <div className="w-full border rounded-full flex items-center py-1 md:py-2 pl-3 pr-1 shadow-sm">
+      <div className="w-full border border-gray-400 rounded-full flex items-center py-1 md:py-2 pl-3 pr-1 shadow-sm">
         <input
           type="text"
           className="bg-transparent outline-none flex-grow"
@@ -28,7 +28,7 @@ const Navbar = () => {
           <p className="hidden md:inline-flex">Become a host</p>
           <GlobeAltIcon className="h-6" />
         </button>
-        <button className="flex items-center border-2 rounded-full p-1 cursor-pointer">
+        <button className="flex items-center border-2 border-gray-400 rounded-full p-1 cursor-pointer">
           <Bars3Icon className="h-6" />
           <UserCircleIcon className="h-6" />
         </button>
